@@ -103,15 +103,15 @@ function App() {
           </div>
         </div>
         <button
-          className="bg-gray-100 hover:bg-gray-300 text-gray-800 font-bold py-1 px-2 rounded cursor-pointer"
+          className="bg-gray-100 hover:bg-gray-300 text-gray-800 font-bold px-5 rounded cursor-pointer border"
           onClick={handleRestart}
         >
           {titleButton}
         </button>
 
         <div
-          className="border border-gray-800 mt-4 relative p-1"
-          style={{ width: "400px", height: "400px" }}
+          className="border border-gray-800 mt-4 relative p-1 md:w-[400px] sm:w-[400px] xl:w-[400px] h-[400px] w-[300px]"
+          // style={{ width: "400px", height: "400px" }}
         >
           {pointsPosition.map((pos, index) => (
             <div
