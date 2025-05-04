@@ -154,8 +154,7 @@ function App() {
       setisGameOver(true);
     }
   }, [gameStatus]);
-  //
-  console.log("index: ", currentClickIndex);
+
   return (
     <MyContext.Provider value={{ isGameOver, setisGameOver }}>
       <div className="min-h-screen flex flex-col items-center justify-center">
