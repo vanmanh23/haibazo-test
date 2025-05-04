@@ -155,7 +155,7 @@ function App() {
     }
   }, [gameStatus]);
   //
-
+  console.log("index: ", currentClickIndex);
   return (
     <MyContext.Provider value={{ isGameOver, setisGameOver }}>
       <div className="min-h-screen flex flex-col items-center justify-center">
@@ -226,6 +226,12 @@ function App() {
               </div>
             ))}
           </div>
+          {currentClickIndex >= 1  && pendingPoint > 0 && currentClickIndex <= pointsPosition.length && 
+            (gameStatus !== "gameover" && gameStatus !== "win") && (
+              <div>
+                <p>Next: {currentClickIndex}</p>
+              </div>
+            )}
         </div>
       </div>
     </MyContext.Provider>
